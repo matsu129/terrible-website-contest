@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+  <title>Piyo Maze</title>
+</head>
+<body>
+  <header>
+    <section id="deco1">
+      <img src="./assets/money-kazoe.gif" class="animate__animated animate__backOutDown animate__infinite animate__slow">
+      <img src="./assets/faceroler.gif" class="animate__animated animate__backOutDown animate__infinite animate__slower animate__delay-1s">
+      <img src="./assets/fumifumi-hiyoko.gif" class="animate__animated animate__backOutDown animate__infinite animate__fast animate__delay-2s">
+      <img src="./assets/dance-imo.gif" class="animate__animated animate__backOutDown animate__infinite animate__faster animate__delay-3s">
+      <img src="./assets/dancing-hiyoko-2.gif" class="animate__animated animate__backOutDown animate__infinite animate__slower animate__delay-4s">
+      <img src="./assets/hakusyu.gif" class="animate__animated animate__backOutDown animate__infinite animate__slow animate__delay-5s">
+      <img src="./assets/handy-senpuki-1.gif" class="animate__animated animate__backOutDown animate__infinite animate__fast">
+      <img src="./assets/headphone-norinori.gif" class="animate__animated animate__backOutDown animate__infinite animate__faster animate__delay-1s">
+      <img src="./assets/heart-machinegun.gif" class="animate__animated animate__backOutDown animate__infinite animate__slow animate__delay-2s">
+      <img src="./assets/hunburg-eat-hiyoko.gif" class="animate__animated animate__backOutDown animate__infinite animate__slower animate__delay-3s">
+      <img src="./assets/hunburg-make-hiyoko.gif" class="animate__animated animate__backOutDown animate__infinite animate__faster animate__delay-4s">
+    </section>
+  </header>
+  <main>
+    <section id="deco2">
+      <img src="./assets/hunburg-make.gif" class="animate__animated animate__backOutRight animate__infinite animate__slow">
+      <img src="./assets/i-love-you.gif" class="animate__animated animate__backOutRight animate__infinite animate__slower animate__delay-1s">
+      <img src="./assets/iyaiyaki.gif" class="animate__animated animate__backOutRight animate__infinite animate__faster animate__delay-2s">
+      <img src="./assets/kaiten-hiyoko-usagi.gif" class="animate__animated animate__backOutRight animate__infinite animate__fast animate__delay-3s">
+      <img src="./assets/kashiwamochitabehiyoko.gif" class="animate__animated animate__backOutRight animate__infinite animate__slow animate__delay-4s">
+      <img src="./assets/loading-hiyoko.gif" class="animate__animated animate__backOutRight animate__infinite animate__slower animate__delay-5s">
+      <img src="./assets/maracashiyoko.gif" class="animate__animated animate__backOutRight animate__infinite animate__faster">
+      <img src="./assets/metron.gif" class="animate__animated animate__backOutRight animate__infinite animate__fast animate__delay-1s">
+    </section>
+    <section id="game-area">
+      <h1>🐣Piyo Maze🐣</h1>
+      <p>Avoid the obstacles!</p>
+      <div id="start">
+        <h2>Start here</h2>
+        <h3>↓</h3>
+      </div>
+      <ul class="wall">
+        <li id="wall1" class="swing"><img src="./assets/hunburg-make.gif"></li>
+        <li id="wall2" class="swing-vertical"><img src="./assets/faceroler.gif"></li>
+        <li id="wall3" class="swing-s"><img src="./assets/i-love-you.gif"></li>
+        <li id="wall4" class="swing-vertical"><img src="./assets/kaiten-hiyoko-usagi.gif"></li>
+        <li id="wall5" class="swing"><img src="./assets/maracashiyoko.gif"></li>
+        <li id="wall6" class="swing-s"><img src="./assets/metron.gif"></li>
+        <li id="wall7" class="swing"><img src="./assets/nichiyoudaiku-hiyoko.gif"></li>
+        <li id="wall8" class="swing-vertical"><img src="./assets/pckatakata.gif"></li>
+        <li id="wall9" class="swing"><img src="./assets/nekopiyotaso.gif"></li>
+        <li id="wall10" class="swing-s"><img src="./assets/twist-hiyoko.gif"></li>
+        <li id="wall11" class="swing"><img src="./assets/uho-iihiyoko.gif"></li>
+        <li id="wall12" class="swing-vertical"><img src="./assets/nekopiyotaso.gif"></li>
+        <li id="wall13" class="swing-s"><img src="./assets/3ae5f9eabee16a4dc51ddc1c6b94978a.gif"></li>
+        <li id="wall14" class="swing-vertical"><img src="./assets/fumifumi-hiyoko.gif"></li>
+        <li id="wall15" class="swing"><img src="./assets/akubi.gif"></li>
+        <li id="wall16" class="swing-s"><img src="./assets/bini-rupu-ru-kuturogu-scaled.gif"></li>
+        <li id="wall17" class="swing"><img src="./assets/cupramen-gif.gif"></li>
+        <li id="wall18" class="swing-vertical"><img src="./assets/dadakko.gif"></li>
+        <li id="wall19" class="swing"><img src="./assets/shirifuri-hiyoko.gif"></li>
+        <li id="wall20" class="swing"><img src="./assets/twist-hiyoko.gif"></li>
+        <li id="head" class="stretch-right"></li>
+        <li id="bottom" class="stretch-left"></li>
+        <li id="left" class="stretch-x"></li>
+        <li id="right" class="stretch-x"></li>
+        <li class="error">
+          <div>
+            <p>FAIL!! 🥲</p>
+            <img src="./assets/twist-hiyoko.gif">
+          </div>
+        </li>
+        <li id="goal">
+          <p>✨GOAL✨</p>
+          <img src="./assets/hakusyu.gif" alt="Goal!" id="goal-img">
+          <img src="./assets/goal-effect.gif" alt="Goal-effect" id="goal-effect">
+        </li>
+      </ul>
+    </section>
+    <section id="deco3">
+      <img src="./assets/nichiyoudaiku-hiyoko.gif" class="animate__animated animate__backOutLeft animate__infinite animate__fast">
+      <img src="./assets/norinori-dance-hiyoko.gif" class="animate__animated animate__backOutLeft animate__infinite animate__faster animate__delay-1s">
+      <img src="./assets/onion-kizami-hiyoko.gif" class="animate__animated animate__backOutLeft animate__infinite animate__slow animate__delay-2s">
+      <img src="./assets/pckatakata.gif" class="animate__animated animate__backOutLeft animate__infinite animate__slower animate__delay-3s">
+      <img src="./assets/shirifuri-hiyoko.gif" class="animate__animated animate__backOutLeft animate__infinite animate__fast animate__delay-4s">
+      <img src="./assets/shokupan-torampolyn.gif" class="animate__animated animate__backOutLeft animate__infinite animate__faster animate__delay-5s">
+      <img src="./assets/nekopiyotaso.gif" class="animate__animated animate__backOutLeft animate__infinite animate__slower">
+    </section>
+  </main>
+  <footer>
+    <section id="deco4">
+      <img src="./assets/twist-hiyoko.gif" class="animate__animated animate__backOutUp animate__infinite animate__slow">
+      <img src="./assets/shirifuri-hiyoko.gif" class="animate__animated animate__backOutUp animate__infinite animate__slower animate__delay-1s">
+      <img src="./assets/fumifumi-hiyoko.gif" class="animate__animated animate__backOutUp animate__infinite animate__fast animate__delay-2s">
+      <img src="./assets/3ae5f9eabee16a4dc51ddc1c6b94978a.gif" class="animate__animated animate__backOutUp animate__infinite animate__faster animate__delay-3s">
+      <img src="./assets/akubi.gif" class="animate__animated animate__backOutUp animate__infinite animate__slow animate__delay-4s">
+      <img src="./assets/bini-rupu-ru-kuturogu-scaled.gif" class="animate__animated animate__backOutUp animate__infinite animate__slower animate__delay-5s">
+      <img src="./assets/biyonbiyon.gif" class="animate__animated animate__backOutUp animate__infinite animate__fast">
+      <img src="./assets/bonus-yorokobi.gif"class="animate__animated animate__backOutUp animate__infinite animate__faster animate__delay-1s">
+      <img src="./assets/cupramen-gif.gif" class="animate__animated animate__backOutUp animate__infinite animate__slower animate__delay-2s">
+      <img src="./assets/dadakko.gif" class="animate__animated animate__backOutUp animate__infinite animate__slow animate__delay-3s">
+      <img src="./assets/uho-iihiyoko.gif" class="animate__animated animate__backOutUp animate__infinite animate__delay-4s">
+    </section>
+  </footer>
+</body>
+</html>
